@@ -16,12 +16,18 @@ function App() {
   return (
     <Box sx={{ flexGrow: 1 }}>
       <Grid container spacing={0}>
-        <Grid item xs={12}>
+        <Grid item xs={12} sm={12} md={12} lg={12} xl={12}>
           <Item style={{ color: "black", backgroundColor: "#e91e63" }}>
             Nav
           </Item>
         </Grid>
-        <Grid item xs={4} sx={{ display: { xs: "none", md: "block" } }}>
+        <Grid
+          item
+          md={4}
+          lg={4}
+          xl={4}
+          sx={{ display: { xs: "none", md: "block" } }}
+        >
           <Item style={{ color: "black", backgroundColor: "#00e676" }}>
             Aside
           </Item>
